@@ -1,0 +1,28 @@
+.left_panel {
+  position: fixed;
+  bottom: 0;
+  left: 40px;
+  width: 40px;
+  z-index: 10;
+}
+
+.left_panel__links {
+  & > li {
+    display: block;
+    margin-bottom: 0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

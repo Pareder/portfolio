@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="100 50 300 300" version="1.1" id="svg_null">
+    <defs>
+        <linearGradient id="linearGradient" gradientTransform="rotate(90)">
+            <stop offset="5%"  stop-color="#64ffda"/>
+            <stop offset="95%" stop-color="#2db595"/>
+        </linearGradient>
+    </defs>
+    <g id="root" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path
+            d="M97 307l181.895 0l-90.947 -205.066l-90.948 205.066zm212.977 -212l94.023 212l-188.046 0l94.023 -212z"
+            id="shape.secondary"
+            fill="url(#linearGradient)"
+            fill-rule="nonzero"
+        ></path>
+    </g>
+</svg>

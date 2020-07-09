@@ -1,0 +1,25 @@
+.intro__h1 {
+  font-weight: 400;
+  font-size: 18px;
+
+  @include md {
+    font-size: 24px;
+  }
+}
+
+.intro__h2 {
+  line-height: 1.1;
+}
+
+.intro__text {
+  margin: 30px 0;
+
+  @include md {
+    width: 60%;
+    margin: 80px 0;
+  }
+}
+
+.intro__link {
+  padding: 20px 30px;
+}

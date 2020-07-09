@@ -1,0 +1,46 @@
+.experience__jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.jobs__block {
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include md {
+    width: 48%;
+  }
+}
+
+.jobs__link {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: $secondary;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.jobs__list {
+  margin-top: 40px;
+  font-size: 14px;
+
+  @include md {
+    font-size: 16px;
+  }
+}

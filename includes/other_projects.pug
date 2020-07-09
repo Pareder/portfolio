@@ -1,0 +1,21 @@
+section.section.other_projects
+    h3.text--center Other Noteworthy Projects
+    div.other_projects__container
+        each project in otherProjects
+            div.other_projects__block
+                header.other_project__header
+                    div.other_project__top
+                        img(src='img/social/folder.svg', alt='Folder', title='Folder').header__image
+                        div.project__links
+                            if project.github
+                                a(href=social[1].url + '/' + project.name.toLowerCase(), target='_blank', rel='nofollow noopener noreferrer' aria-label='Github Link')
+                                    img(src='img/social/github.svg', alt='Github', title='Github').social__link
+                            if project.url
+                                a(href=project.url, target='_blank', rel='nofollow noopener noreferrer' aria-label='External Link')
+                                    img(src='img/social/link.svg', alt='External', title='External').social__link
+                    h5 #{project.name}
+                    p.text--small.text--dark-primary #{project.description}
+                footer.other_project__footer
+                    ul.project__technologies.text--monospace.text--dark-primary
+                        each library in project.libraries
+                            li #{library}

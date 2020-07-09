@@ -1,0 +1,12 @@
+header.header
+    nav.header__nav
+        a(href='/', aria-label='home').nav__logo
+            img(src='/img/logo/logo.svg', title='Logo', alt='Logo')
+        input(type='checkbox')#nav__checkbox
+        label(for='nav__checkbox').nav__label
+        div.nav__links
+            ol.links__menu
+                each menu in ['about', 'experience', 'projects', 'contact']
+                    li.menu__item
+                        a(href='#' + menu).menu__link #{menu}
+            a(href='/resume.pdf', target='_blank', rel='nofollow noopener noreferrer').links__resume.link-button Resume

@@ -1,0 +1,39 @@
+.contact {
+  max-width: 600px;
+}
+
+.contact__h3 {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+
+  &::before {
+    font-size: 16px;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.contact__h4 {
+  font-size: 32px;
+
+  @include md {
+    font-size: 48px;
+  }
+
+  @include lg {
+    font-size: 60px;
+  }
+}
+
+.contact__p {
+  margin: 40px 0;
+  font-size: 14px;
+
+  @include md {
+    margin: 8w0px 0;
+    font-size: 18px;
+  }
+}

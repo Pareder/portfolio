@@ -1,0 +1,136 @@
+.header {
+  padding: 30px 20px;
+  box-shadow: $box-shadow-color 0px 10px 30px -15px;
+
+  @include md {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 42px;
+  height: 42px;
+}
+
+#nav__checkbox {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+
+  &:checked ~ .nav__links {
+    transform: translateX(0);
+  }
+
+  &:checked + .nav__label {
+    &:before {
+      top: 5px;
+      transform: rotate(135deg);
+    }
+
+    &:after {
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+.nav__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  z-index: 3;
+
+  &::before, &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 32px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: $secondary;
+    transition: transform 0.3s ease;
+  }
+
+  &::before {
+    top: -5px;
+  }
+
+  &::after {
+    top: 5px;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.nav__links {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  transform: translateX(300px);
+  background-color: $background-color-light;
+  box-shadow: $box-shadow-color -5px 0px 20px 5px;
+  transition: transform 0.5s ease;
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: auto;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.links__menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  counter-reset: item;
+
+  @include md {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.menu__item {
+  margin: 30px 0;
+  counter-increment: item 1;
+
+  &::before {
+    content: "0" counter(item) ".";
+    color: $secondary;
+  }
+
+  a {
+    padding: 10px;
+  }
+
+  @include md {
+    margin: 0 10px;
+  }
+}
+
+.links__resume {
+  padding: 10px 15px;
+}

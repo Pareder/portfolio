@@ -1,0 +1,12 @@
+.right_panel {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  width: 40px;
+  z-index: 10;
+}
+
+.panel__link {
+  writing-mode: vertical-lr;
+  margin: 20px 0;
+}

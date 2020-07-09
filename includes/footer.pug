@@ -1,0 +1,7 @@
+footer.footer.text--center
+    ul.footer__links
+        each link in social
+            li
+                a(href=link.url, target='_blank', title=link.title)
+                    img(src='img/social/' + link.title + '.svg', alt=link.title).social__link
+    p Developed & Built by Anton Cherniavskyi

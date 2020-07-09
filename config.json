@@ -1,0 +1,74 @@
+{
+  "name": "Anton Cherniavskyi",
+  "title": "Anton Cherniavskyi | Front-End Developer",
+  "description": "Versatile front-end software engineer focused on building beautiful interfaces and experiences",
+  "url": "https://pareder.github.io",
+  "cover": "img/cover.png",
+  "social": [
+    {
+      "title": "email",
+      "url": "mailto:ruskc2beat@gmail.com"
+    },
+    {
+      "title": "github",
+      "url": "https://github.com/Pareder"
+    },
+    {
+      "title": "linkedin",
+      "url": "https://ua.linkedin.com/in/anton-cherniavskyi-16b9151b2"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Worldaria",
+      "description": "Worldaria is the educational geographical game in which you need to guess countries and regions. It is available to play with another person, learn different countries' statistics and historical countries",
+      "libraries": ["Vue.js", "Vuex", "Leaflet", "Express", "socket.io", "Firebase"],
+      "url": "http://worldaria.herokuapp.com/"
+    },
+    {
+      "name": "AstroX",
+      "description": "AstroX is built on two open rocket launches API and represents the statistics of past and upcoming rocket launches with different charts and statistics",
+      "libraries": ["Vue.js", "Vuex", "Vuetify", "Chart.js", "Express"],
+      "url": "http://astrox.herokuapp.com/"
+    },
+    {
+      "name": "miner-sapper",
+      "description": "It is the collection of simple classic computer games: minesweeper, tetris, snake, crush and 2048",
+      "libraries": ["Vue.js", "Express", "lowdb"],
+      "url": "http://miner-sapper.herokuapp.com/"
+    }
+  ],
+  "otherProjects": [
+    {
+      "name": "pageFinder",
+      "description": "A single page app to find position of your phrase (it may be site domain) by searching queries in Google",
+      "libraries": ["React", "Material-UI", "Express", "Puppeteer"],
+      "github": true
+    },
+    {
+      "name": "devlikepro",
+      "description": "WordPress blog containing technical articles",
+      "libraries": ["WordPress"]
+    },
+    {
+      "name": "Investment Portfolio",
+      "description": "Google Chrome extension for tracking the exchange rates and revenues from different crypto currencies",
+      "libraries": ["HTML", "CSS", "jQuery", "socket.io"]
+    },
+    {
+      "name": "Mapparia",
+      "description": "First simple version of Worldaria with reduced functionality",
+      "libraries": ["HTML", "CSS", "jQuery"]
+    },
+    {
+      "name": "Who Wants to Be a Millionaire",
+      "description": "An online version of world-famous game for the city mall",
+      "libraries": ["HTML", "CSS", "jQuery", "PHP", "MySQL"]
+    },
+    {
+      "name": "World of Questions",
+      "description": "An online game similar to \"What? Where? When?\" for the groups of people",
+      "libraries": ["HTML", "CSS", "jQuery", "PHP", "MySQL"]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+  line-height: 1.3;
+  overflow-x: hidden;
+
+  &.blur {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+ul li {
+  margin-bottom: 10px;
+
+  &::before {
+    content: "▹";
+    margin-right: 10px;
+    color: $secondary;
+  }
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: 700;
+  color: $primary;
+}
+
+h3 {
+  font-size: 24px;
+
+  @include md {
+    font-size: 28px;
+  }
+
+  @include xl {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+
+  @include md {
+    font-size: 20px;
+  }
+
+  @include xl {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  @include md {
+    font-size: 16px;
+  }
+
+  @include xl {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 16px;
+
+  @include md {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+
+  @include xl {
+    font-size: 20px;
+  }
+}
+
+.site {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1600px;
+  min-width: 100vw;
+  margin: 0 auto;
+  padding: 0 20px;
+  counter-reset: section 0;
+
+  @include md {
+    padding: 0 100px;
+  }
+
+  @include xl {
+    padding: 0 150px;
+  }
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  @include md {
+    padding: 100px 0;
+  }
+
+  @include xl {
+    padding: 150px 0;
+  }
+}
+
+.text--big {
+  font-size: 32px;
+
+  @include md {
+    font-size: 50px;
+  }
+
+  @include xl {
+    font-size: 70px;
+  }
+}
+
+.text--small {
+  font-size: 14px;
+}
+
+.text--monospace {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.text--normal {
+  font-weight: normal;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--white {
+  color: $white;
+}
+
+.text--black {
+  color: $black;
+}
+
+.text--secondary {
+  color: $secondary;
+}
+
+.text--dark-primary {
+  color: $dark-primary;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.link-button {
+  @extend .text--secondary;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgba($secondary, 0.2);
+  }
+}
+
+.section__h3 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 40px;
+  counter-increment: section 1;
+
+  &::before {
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    color: $secondary;
+  }
+
+  @include md {
+    &::after {
+      content: "";
+      display: block;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: $dark-grey;
+    }
+  }
+}
+
+.image__link {
+  display: block;
+  position: relative;
+  z-index: 1;
+  box-shadow: $box-shadow-color 0px 10px 30px -15px;
+
+  & > img {
+    border-radius: 3px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba($secondary, 0.3);
+    transition: background-color 0.3s ease;
+  }
+
+  &:hover {
+    &::before {
+      background-color: transparent;
+    }
+  }
+}
+
+.social__link {
+  width: 22px;
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: hue-rotate(-100deg);
+  }
+}
+
+.side__panel {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: $primary;
+  }
+
+  @include md {
+    display: flex;
+  }
+}
