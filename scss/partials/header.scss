@@ -1,6 +1,9 @@
 .header {
+  position: relative;
+  z-index: 11;
   padding: 30px 20px;
-  box-shadow: $box-shadow-color 0px 10px 30px -15px;
+  background-color: $background-color;
+  box-shadow: $box-shadow-color 0 10px 30px -15px;
 
   @include md {
     padding-left: 50px;

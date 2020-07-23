@@ -2,5 +2,5 @@ div.left_panel
     ul.left_panel__links.side__panel
         each link in social
             li
-                a(href=link.url, target='_blank', title=link.title)
+                a(href=link.url, target=link.title === 'email' ? '_self' : '_blank', title=link.title)
                     img(src='img/social/' + link.title + '.svg', alt=link.title).social__link
