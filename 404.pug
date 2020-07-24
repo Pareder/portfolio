@@ -1,0 +1,12 @@
+extends layouts/not_found
+
+block content
+    div.site
+        include includes/header
+        include includes/left_panel
+        include includes/right_panel
+        main.main
+            h1.not_found__h1.text--secondary.text--center 404
+            h2.text--normal.text--center Page Not Found
+            a(href='/', rel='nofollow noopener noreferrer').not_found__link.intro__link.link-button Go Home
+        include includes/footer

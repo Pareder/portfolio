@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const links = document.querySelectorAll('.menu__link[href^="#"]');
+	if (window.location.hash) {
+		document.querySelector('.' + window.location.hash.replace('#', '')).scrollIntoView({behavior: 'smooth'});
+	}
+
+	const links = document.querySelectorAll('.menu__link[href*="#"]');
 	for (const link of links) {
-		link.addEventListener('click', (e) => {
+		link.addEventListener('click', e => {
 			const navCheckbox = document.getElementById('nav__checkbox');
 			if (navCheckbox.checked) {
 				navCheckbox.checked = false;

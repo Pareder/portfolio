@@ -127,8 +127,13 @@ p {
 .main {
   max-width: 1600px;
   min-width: 100vw;
+  min-height: calc(100vh - 102px);
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   counter-reset: section 0;
 
   @include md {
@@ -141,6 +146,7 @@ p {
 }
 
 .section {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0;

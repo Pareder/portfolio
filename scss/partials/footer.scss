@@ -1,9 +1,5 @@
 .footer {
-  padding: 50px 20px;
-
-  @include md {
-    display: none;
-  }
+  padding: 50px 20px 20px;
 }
 
 .footer__links {
@@ -17,5 +13,9 @@
     &::before {
       display: none;
     }
+  }
+
+  @include md {
+    display: none;
   }
 }

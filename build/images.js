@@ -1,6 +1,6 @@
 import imageMin from 'gulp-imagemin';
 
-const imgPath = 'img/**/*.+(png|jpg|jpeg|gif|svg)';
+const imgPath = 'img/**/*.+(png|jpg|jpeg|gif|svg|xml|json)';
 const destPath = 'site/img';
 
 const images = gulp => {

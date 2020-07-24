@@ -1,0 +1,20 @@
+.not_found__h1 {
+  font-size: 60px;
+  line-height: 1;
+
+  @include md {
+    font-size: 80px;
+  }
+
+  @include lg {
+    font-size: 100px;
+  }
+
+  @include xl {
+    font-size: 120px;
+  }
+}
+
+.not_found__link {
+  margin-top: 50px;
+}
