@@ -160,18 +160,6 @@ p {
   }
 }
 
-.text--big {
-  font-size: 32px;
-
-  @include md {
-    font-size: 50px;
-  }
-
-  @include xl {
-    font-size: 70px;
-  }
-}
-
 .text--small {
   font-size: 14px;
 }

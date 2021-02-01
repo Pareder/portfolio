@@ -25,4 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.documentElement.classList.remove('blur');
 		}
 	});
+
+	setInterval(() => {
+		document.querySelector('.section.intro').classList.toggle('name');
+		document.querySelector('.section.intro').classList.toggle('position');
+	}, 3000)
 });
