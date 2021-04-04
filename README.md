@@ -13,7 +13,7 @@
   </a>
 </p>
 
-![demo](https://raw.githubusercontent.com/pareder/portfolio/master/img/cover.png)
+![demo](./img/cover.png)
 
 ## Used
 
