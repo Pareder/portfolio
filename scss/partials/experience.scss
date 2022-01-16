@@ -1,15 +1,70 @@
+.experience__container {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.experince__menu {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    margin-right: 30px;
+  }
+}
+
+.experience__btn {
+  padding: 15px 20px;
+  border: none;
+  border-left: 2px solid $dark-grey;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: $primary;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: left;
+  transition: all 0.3s;
+
+  &.active {
+    color: $secondary;
+    border-left-color: $secondary;
+  }
+
+  &:hover {
+    color: $secondary;
+    background-color: $background-color-light;
+  }
+}
+
 .experience__jobs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.jobs__block {
-  width: 100%;
-  margin-bottom: 30px;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-  @include md {
-    width: 48%;
+.jobs__block {
+  margin-bottom: 30px;
+  display: none;
+
+  &.active {
+    display: block;
+    animation-name: fade-in;
+    animation-fill-mode: both;
+    animation-duration: .5s;
   }
 }
 

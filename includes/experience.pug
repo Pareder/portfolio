@@ -1,36 +1,15 @@
 section.section.experience
     h3.section__h3 Work Experience
-    div.experience__jobs
-        div.jobs__block
-            h4 Front-End Developer &nbsp;
-                a(href='https://djangostars.com', target='_blank', rel='nofollow noopener noreferrer').jobs__link.text--secondary @Django Stars
-            h5.text--dark-primary August 2020 - Present
-            ul.jobs__list
-                li.list__item Participation in the Agile Product Development Life Cycle
-                li.list__item Building efficient and reusable web systems and abstractions
-                li.list__item Improving and optimizing existing functionality
-                li.list__item Identifying and communicating Javascript best practices
-                li.list__item Working directly with the back-end developers
-                li.list__item Conducting a code review, participation in internal meetups
-        div.jobs__block
-            h4 JavaScript Developer &nbsp;
-                a(href='https://adkernel.com/', target='_blank', rel='nofollow noopener noreferrer').jobs__link.text--secondary @AdKernel
-            h5.text--dark-primary April 2019 ‒ July 2020
-            ul.jobs__list
-                li.list__item Maintain and support of project for empowering the business of digital advertising
-                li.list__item Building reusable and testable components and libraries for future use
-                li.list__item Creating of high-performance online text editor from scratch
-                li.list__item Integrated into existing application real-time communication audio chat using WebRTC
-                li.list__item Optimized loading of initial config
-                li.list__item Implemented forms routing using React Hooks API
-        div.jobs__block
-            h4 Front-End Developer &nbsp;
-                a(href='https://grandsolution.com.ua/', target='_blank', rel='nofollow noopener noreferrer').jobs__link.text--secondary @Grand Solution
-            h5.text--dark-primary November 2017 ‒ April 2019
-            ul.jobs__list
-                li.list__item Translated design team’s mockups into responsive, interactive features, using HTML, CSS and JavaScript
-                li.list__item Created custom Vue.js components for internal projects
-                li.list__item Developed Google Chrome extensions
-                li.list__item Made redesign and different changes on Wordpress sites
-                li.list__item Optimized page speed using GTmetrix
-                li.list__item Developed template engine for building sites with predefined components
+    div.experience__container
+        div.experince__menu
+            each item, index in experience
+                button(type='button' class=`experience__btn ${index === 0 ? 'active' : ''}` data-index=index) #{item.company}
+        div.experience__jobs
+            each item, index in experience
+                div(class=`jobs__block ${index === 0 ? 'active' : ''}` data-index=index)
+                    h4 #{item.title} &nbsp;
+                        a(href=item.link, target='_blank', rel='nofollow noopener noreferrer').jobs__link.text--secondary @#{item.company}
+                    h5.text--dark-primary #{item.period}
+                    ul.jobs__list
+                        each action in item.actions
+                            li.list__item #{action}

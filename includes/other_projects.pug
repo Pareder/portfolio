@@ -14,7 +14,7 @@ section.section.other_projects
                                 a(href=project.url, target='_blank', rel='nofollow noopener noreferrer' aria-label='External Link')
                                     img(src='img/social/link.svg', alt='External', title='External').social__link
                     h5 #{project.name}
-                    p.text--small.text--dark-primary #{project.description}
+                    p.text--small.text--dark-primary !{project.description}
                 footer.other_project__footer
                     ul.project__technologies.text--monospace.text--dark-primary
                         each library in project.libraries

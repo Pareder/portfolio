@@ -36,6 +36,10 @@
 
 .project__description {
   @include md {
+    width: 75%;
+  }
+
+  @include lg {
     width: 50%;
   }
 }

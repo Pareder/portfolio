@@ -18,6 +18,50 @@
       "url": "https://ua.linkedin.com/in/anton-cherniavskyi-16b9151b2"
     }
   ],
+  "experience": [
+    {
+      "title": "Front-End Developer",
+      "company": "Django Stars",
+      "link": "https://djangostars.com",
+      "period": "August 2020 - Present",
+      "actions": [
+        "Participation in the Agile Product Development Life Cycle (Fintech, E-commerce, Healthcare, Audit, Social Network)",
+        "Building efficient and reusable web systems and abstractions",
+        "Improving and optimizing existing functionality",
+        "Identifying and communicating Javascript best practices",
+        "Working directly with the back-end developers",
+        "Performing a code review, participation in internal meetups, conducting technical interviews"
+      ]
+    },
+    {
+      "title": "JavaScript Developer",
+      "company": "AdKernel",
+      "link": "https://adkernel.com/",
+      "period": "April 2019 ‒ July 2020",
+      "actions": [
+        "Maintain and support of project for empowering the business of digital advertising",
+        "Building reusable and testable components and libraries for future use",
+        "Creating of high-performance online text editor from scratch",
+        "Integrated into existing application real-time communication audio chat using WebRTC",
+        "Optimized loading of initial config",
+        "Implemented forms routing using React Hooks API"
+      ]
+    },
+    {
+      "title": "Front-End Developer",
+      "company": "Grand Solutions",
+      "link": "https://grandsolution.com.ua/",
+      "period": "November 2017 ‒ April 2019",
+      "actions": [
+        "Translated design team’s mockups into responsive, interactive features, using HTML, CSS and JavaScript",
+        "Created custom Vue.js components for internal projects",
+        "Developed Google Chrome extensions",
+        "Made redesign and different changes on Wordpress sites",
+        "Optimized page speed using GTmetrix",
+        "Developed template engine for building sites with predefined components"
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Worldaria",
@@ -34,15 +78,34 @@
     {
       "name": "miner-sapper",
       "description": "It is the collection of simple classic computer games: minesweeper, tetris, snake, crush and 2048",
-      "libraries": ["Vue.js", "Express", "lowdb"],
+      "libraries": ["Vue.js", "Express", "Firebase"],
       "url": "http://miner-sapper.herokuapp.com/"
+    },
+    {
+      "name": "heroes-adviser",
+      "description": "Dota2 heroes adviser application to counter pick your enemy team",
+      "libraries": ["Svelte", "Highcharts"],
+      "url": "https://heroes-adviser.netlify.app"
     }
   ],
   "otherProjects": [
     {
+      "name": "webrtc",
+      "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://webrtc-fundamentals.herokuapp.com/static/presentation.html' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
+      "libraries": ["React", "WebRTC", "React Testing Library"],
+      "github": true,
+      "url": "https://webrtc-fundamentals.herokuapp.com"
+    },
+    {
       "name": "pageFinder",
       "description": "A single page app to find position of your phrase (it may be site domain) by searching queries in Google",
       "libraries": ["React", "Material-UI", "Express", "Puppeteer"],
+      "github": true
+    },
+    {
+      "name": "phonez",
+      "description": "Web application presenting smartphones information built on open API. NOTE: used API is currently down",
+      "libraries": ["React", "Redux", "AntD"],
       "github": true
     },
     {

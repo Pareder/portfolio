@@ -26,6 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+	const experienceBtns = document.querySelectorAll('.experience__btn');
+	for (const btn of experienceBtns) {
+		btn.addEventListener('click', e => {
+			const btnIndex = e.target.dataset.index;
+			const activeExperienceBlock = document.querySelector('.jobs__block.active');
+			if (activeExperienceBlock.dataset.index === btnIndex) {
+				return;
+			}
+
+			const activeExperienceBtn = document.querySelector('.experience__btn.active');
+			e.target.classList.add('active');
+			activeExperienceBtn.classList.remove('active');
+
+			const experienceBlock = document.querySelector(`.jobs__block[data-index="${btnIndex}"]`);
+			activeExperienceBlock.classList.remove('active');
+			experienceBlock.classList.add('active');
+		});
+	}
+
 	setInterval(() => {
 		document.querySelector('.section.intro').classList.toggle('name');
 		document.querySelector('.section.intro').classList.toggle('position');
