@@ -67,7 +67,7 @@
       "name": "Worldaria",
       "description": "Worldaria is the educational geographical game in which you need to guess countries and regions. It is available to play with another person, learn different countries' statistics and historical countries",
       "libraries": ["Vue.js", "Vuex", "Leaflet", "Express", "socket.io", "Firebase"],
-      "url": "http://worldaria.herokuapp.com/"
+      "url": "https://worldaria.onrender.com"
     },
     {
       "name": "AstroX",
