@@ -2,7 +2,7 @@
   @for $frame from 1 through 311 {
     .intro__animation span:nth-of-type(#{$frame}) {
       transition-delay: random(800) + ms !important;
-      background-color: rgba($primary, random(10) / 5 + .2);
+      background-color: rgba($primary, calc(random(10) / 5 + .2));
       @if length($scene) >= $frame {
         clip-path: nth($scene, $frame);
       }

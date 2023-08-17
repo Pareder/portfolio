@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My own personal site portfolio",
   "engines": {
-    "node": "12.18.2"
+    "node": "18.16.0"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,8 @@
     "gulp-eslint": "^6.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.65.1"
   }
 }

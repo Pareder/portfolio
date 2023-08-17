@@ -1,7 +1,9 @@
-import sass from 'gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import prefix from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
 
+const sass = gulpSass(dartSass);
 const scssPath = 'scss/*.scss';
 const destPath = 'site/css';
 

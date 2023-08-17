@@ -25,7 +25,7 @@
       "link": "https://djangostars.com",
       "period": "August 2020 - Present",
       "actions": [
-        "Participation in the Agile Product Development Life Cycle (Fintech, E-commerce, Healthcare, Audit, Social Network)",
+        "Participation in the Agile Product Development Life Cycle (Fintech, EdTech, Logistics, E-commerce, Healthcare, Audit, Social Network)",
         "Building efficient and reusable web systems and abstractions",
         "Improving and optimizing existing functionality",
         "Identifying and communicating Javascript best practices",
@@ -73,13 +73,13 @@
       "name": "AstroX",
       "description": "AstroX is built on two open rocket launches API and represents the statistics of past and upcoming rocket launches with different charts and statistics",
       "libraries": ["Vue.js", "Vuex", "Vuetify", "Chart.js", "Express"],
-      "url": "http://astrox.herokuapp.com/"
+      "url": "https://aastrox.netlify.app"
     },
     {
       "name": "miner-sapper",
       "description": "It is the collection of simple classic computer games: minesweeper, tetris, snake, crush and 2048",
-      "libraries": ["Vue.js", "Express", "Firebase"],
-      "url": "http://miner-sapper.herokuapp.com/"
+      "libraries": ["TypeScript", "Vue.js", "Express", "Firebase"],
+      "url": "https://miner-sapper.netlify.app"
     },
     {
       "name": "heroes-adviser",
@@ -91,10 +91,16 @@
   "otherProjects": [
     {
       "name": "webrtc",
-      "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://webrtc-fundamentals.herokuapp.com/static/presentation.html' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
+      "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://github.com/Pareder/webrtc/blob/master/speech/presentation.md' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
       "libraries": ["React", "WebRTC", "React Testing Library"],
+      "github": true
+    },
+    {
+      "name": "musiy",
+      "description": "Simple music application containing information about top artists, albums, labels, etc. built on open GraphQL API",
+      "libraries": ["TypeScript", "React", "Apollo"],
       "github": true,
-      "url": "https://webrtc-fundamentals.herokuapp.com"
+      "url": "https://musiy.netlify.app"
     },
     {
       "name": "pageFinder",
