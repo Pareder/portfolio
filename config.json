@@ -86,6 +86,12 @@
       "description": "Dota2 heroes adviser application to counter pick your enemy team",
       "libraries": ["Svelte", "Highcharts"],
       "url": "https://heroes-adviser.netlify.app"
+    },
+    {
+      "name": "Musiy",
+      "description": "The music application containing information about top artists, albums, labels, etc. built on open GraphQL API",
+      "libraries": ["TypeScript", "React", "Apollo"],
+      "url": "https://musiy.netlify.app"
     }
   ],
   "otherProjects": [
@@ -94,13 +100,6 @@
       "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://github.com/Pareder/webrtc/blob/master/speech/presentation.md' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
       "libraries": ["React", "WebRTC", "React Testing Library"],
       "github": true
-    },
-    {
-      "name": "musiy",
-      "description": "Simple music application containing information about top artists, albums, labels, etc. built on open GraphQL API",
-      "libraries": ["TypeScript", "React", "Apollo"],
-      "github": true,
-      "url": "https://musiy.netlify.app"
     },
     {
       "name": "pageFinder",
