@@ -31,6 +31,31 @@
         "Identifying and communicating Javascript best practices",
         "Working directly with the back-end developers",
         "Performing a code review, participation in internal meetups, conducting technical interviews"
+      ],
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "React Native",
+        "Next.js",
+        "Strapi",
+        "Redux/React-Query",
+        "React Router",
+        "Material-UI/Ant Design",
+        "Formik/React-Final-Form",
+        "React Testing Library/Vitest/Enzyme",
+        "Chart.js",
+        "TipTap/CodeMirror/ProseMirror/Quill",
+        "SASS/CSS Modules/CSS-in-JS",
+        "Webpack/Vite",
+        "Storybook",
+        "Google Maps/Leaflet",
+        "Auth0",
+        "Onfido",
+        "GetStream",
+        "Bit",
+        "RESTful API/WebSocket API",
+        "Figma"
       ]
     },
     {
@@ -45,6 +70,21 @@
         "Integrated into existing application real-time communication audio chat using WebRTC",
         "Optimized loading of initial config",
         "Implemented forms routing using React Hooks API"
+      ],
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Redux",
+        "Webpack/Gulp",
+        "Jest/Enzyme",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "SASS/CSS",
+        "Bootstrap",
+        "WebRTC",
+        "RESTful API/WebSocket API"
       ]
     },
     {
@@ -59,6 +99,20 @@
         "Made redesign and different changes on Wordpress sites",
         "Optimized page speed using GTmetrix",
         "Developed template engine for building sites with predefined components"
+      ],
+      "skills": [
+        "JavaScript",
+        "Vue.js",
+        "Vuex",
+        "Vuetify",
+        "Gulp",
+        "SASS/CSS",
+        "Bootstrap",
+        "PHP",
+        "RESTful API/WebSocket API",
+        "Wordpress",
+        "Figma/Photoshop",
+        "GTmetrix"
       ]
     }
   ],

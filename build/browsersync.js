@@ -5,6 +5,7 @@ const scssPath = 'scss/**/*.scss';
 const jsPath = 'scripts/*.js';
 const viewsPath = '(.|**)/*.pug';
 const imgPath = 'img/**/*.+(png|jpg|jpeg|gif|svg)';
+const configPath = 'config.json';
 
 const browsersync = gulp => {
   const reloadBrowser = done => {
@@ -23,6 +24,7 @@ const browsersync = gulp => {
     gulp.watch(jsPath, gulp.series(['scripts', reloadBrowser]));
     gulp.watch(imgPath, gulp.series(['images', reloadBrowser]));
     gulp.watch(viewsPath, gulp.series(['views', reloadBrowser]));
+    gulp.watch(configPath, gulp.series(['views', reloadBrowser]));
   }));
 };
 

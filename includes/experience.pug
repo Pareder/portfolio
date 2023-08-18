@@ -12,4 +12,8 @@ section.section.experience
                     h5.text--dark-primary #{item.period}
                     ul.jobs__list
                         each action in item.actions
-                            li.list__item #{action}
+                            li #{action}
+                    h5.mt-20 Technologies
+                    ul.skills__list
+                        each skill in item.skills
+                          li.text--small.text--dark-primary #{skill}
