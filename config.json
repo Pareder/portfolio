@@ -103,15 +103,16 @@
       "url": "https://webrtc-fundamentals.onrender.com"
     },
     {
+      "name": "phonez",
+      "description": "Web application presenting smartphones information built on open API.",
+      "libraries": ["React", "Redux", "AntD"],
+      "github": true,
+      "url": "https://phonez.netlify.app"
+    },
+    {
       "name": "pageFinder",
       "description": "A single page app to find position of your phrase (it may be site domain) by searching queries in Google",
       "libraries": ["React", "Material-UI", "Express", "Puppeteer"],
-      "github": true
-    },
-    {
-      "name": "phonez",
-      "description": "Web application presenting smartphones information built on open API. NOTE: used API is currently down",
-      "libraries": ["React", "Redux", "AntD"],
       "github": true
     },
     {
