@@ -97,9 +97,10 @@
   "otherProjects": [
     {
       "name": "webrtc",
-      "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://github.com/Pareder/webrtc/blob/master/speech/presentation.md' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
-      "libraries": ["React", "WebRTC", "React Testing Library"],
-      "github": true
+      "description": "WebRTC simple application with audio and data channels, including <a class='text--secondary' href='https://webrtc-fundamentals.onrender.com/static/presentation.html' target='_blank' rel='nofollow noopener noreferrer'>technology presentation</a>",
+      "libraries": ["React", "WebRTC", "socket.io", "React Testing Library"],
+      "github": true,
+      "url": "https://webrtc-fundamentals.onrender.com"
     },
     {
       "name": "pageFinder",
