@@ -17,7 +17,6 @@ const scripts = gulp => {
     }))
     .pipe(uglify())
     .pipe(gulp.dest(destPath))
-    .pipe(gulp.dest('js'))
   );
 };
 
