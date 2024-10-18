@@ -146,6 +146,12 @@
       "description": "The music application containing information about top artists, albums, labels, etc. built on open GraphQL API",
       "libraries": ["TypeScript", "Vite", "React", "Apollo"],
       "url": "https://musiy.netlify.app"
+    },
+    {
+      "name": "Geodventure",
+      "description": "An interactive geography game where players explore random locations on a virtual map and guess their real-world locations.",
+      "libraries": ["TypeScript", "Vite", "React", "shadcn/ui", "Firebase", "Google Maps"],
+      "url": "https://geodventure.netlify.app"
     }
   ],
   "otherProjects": [
