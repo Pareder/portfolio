@@ -5,7 +5,7 @@ const destPath = 'site/img';
 
 const images = gulp => {
   gulp.task('images', () => gulp
-    .src(imgPath)
+    .src(imgPath, { encoding: false })
     .pipe(imageMin())
     .pipe(gulp.dest(destPath))
   );
