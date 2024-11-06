@@ -150,7 +150,7 @@
     {
       "name": "Geodventure",
       "description": "An interactive geography game where players explore random locations on a virtual map and guess their real-world locations.",
-      "libraries": ["TypeScript", "Vite", "React", "shadcn/ui", "Firebase", "Google Maps"],
+      "libraries": ["TypeScript", "Vite", "React", "shadcn/ui", "Firebase", "Ably", "Google Maps"],
       "url": "https://geodventure.netlify.app"
     }
   ],
