@@ -1,10 +1,10 @@
 section.section.experience
-    h3.section__h3 Work Experience
+    h3(data-aos='fade-right').section__h3 Work Experience
     div.experience__container
-        div.experince__menu
+        div(data-aos='fade-up-right').experince__menu
             each item, index in experience
                 button(type='button' class=`experience__btn ${index === 0 ? 'active' : ''}` data-index=index) #{item.company}
-        div.experience__jobs
+        div(data-aos='fade-up-left').experience__jobs
             each item, index in experience
                 div(class=`jobs__block ${index === 0 ? 'active' : ''}` data-index=index)
                     h4 #{item.title} &nbsp;

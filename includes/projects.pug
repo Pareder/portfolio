@@ -1,7 +1,7 @@
 section.section.projects
-    h3.section__h3 Featured Projects
+    h3(data-aos='fade-right').section__h3 Featured Projects
     each project, index in projects
-        div(class=index % 2 === 0 ? '' : 'reversed').projects__block
+        div(class=index % 2 === 0 ? '' : 'reversed' data-aos=index % 2 === 0 ? 'fade-right' : 'fade-left').projects__block
             a(href=project.url, target='_blank', rel='nofollow noopener noreferrer').project__image.image__link
                 img(src='img/projects/' + project.name.toLowerCase() + '.png', alt=project.name, title=project.name)
             div.project__description

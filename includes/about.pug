@@ -1,7 +1,7 @@
 section.section.about
-    h3.section__h3 About Me
+    h3(data-aos='fade-right').section__h3 About Me
     div.about__info
-        div.info__text.text--dark-primary
+        div(data-aos='fade-right').info__text.text--dark-primary
             p
                 | Hello! I'm Anton, a software engineer based in Kyiv, Ukraine.
             p
@@ -13,7 +13,7 @@ section.section.about
             ul.info__list.text--small.text--monospace
                 each skill in ['TS/JS', 'React/Redux', 'React Native', 'Node.js', 'Vue.js/Vuex', 'HTML/CSS']
                     li.list__item #{skill}
-        div.info__image
+        div(data-aos='fade-left').info__image
             a(href=social[1].url).image__link.image--border
                 // TODO update image
                 img(src='img/main.jpeg', title='Me', alt='Avatar')
