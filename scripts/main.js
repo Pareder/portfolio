@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+	AOS?.init?.();
+
 	if (window.location.hash) {
 		document.querySelector('.' + window.location.hash.replace('#', '')).scrollIntoView({behavior: 'smooth'});
 	}
