@@ -3,7 +3,7 @@ const destPath = 'site/static';
 
 const staticFiles = gulp => {
 	gulp.task('static', () => gulp
-		.src(staticPath)
+		.src(staticPath, { encoding: false })
 		.pipe(gulp.dest(destPath)));
 };
 
