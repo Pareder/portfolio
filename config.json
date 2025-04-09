@@ -43,7 +43,7 @@
         "Redux/React-Query",
         "React Router",
         "Material-UI/Ant Design",
-        "Formik/React-Final-Form",
+        "Formik/React-Hook-Form/React-Final-Form",
         "React Testing Library/Vitest/Enzyme",
         "Chart.js",
         "TipTap/CodeMirror/ProseMirror/Quill",
@@ -121,37 +121,96 @@
     {
       "name": "Worldaria",
       "description": "Worldaria is the educational geographical game in which you need to guess countries and regions. It is available to play with another person, learn different countries' statistics and historical countries",
-      "libraries": ["TypeScript", "Vite", "Vue.js", "Vuetify", "Leaflet", "Express", "socket.io", "Firebase"],
+      "technologies": {
+        "BE": {
+          "label": "BE",
+          "libraries": ["JavaScript", "Express", "socket.io", "Firebase"]
+        },
+        "FE": {
+          "label": "FE",
+          "libraries": ["TypeScript", "Vite", "Vue.js", "Vuetify", "Leaflet"]
+        }
+      },
       "url": "https://worldaria.onrender.com"
+    },
+    {
+      "name": "SmakBook",
+      "description": "SmakBook is the ultimate recipe companion, where taste meets creativity. Discover, create, and organize your favorite recipes, explore new flavors, and elevate your cooking experience.",
+      "technologies": {
+        "BE": {
+          "label": "BE",
+          "libraries": ["TypeScript", "NestJS", "PostgreSQL", "Typeorm", "AWS"]
+        },
+        "FE": {
+          "label": "FE",
+          "libraries": [
+            "JavaScript",
+            "React",
+            "shadcn/ui",
+            "Tailwind CSS",
+            "SWR"
+          ]
+        }
+      },
+      "url": "https://smakbook.com",
+      "withoutGithub": true
     },
     {
       "name": "AstroX",
       "description": "AstroX is built on two open rocket launches API and represents the statistics of past and upcoming rocket launches with different charts and statistics",
-      "libraries": ["Vue.js", "Vuex", "Vuetify", "Chart.js", "Express"],
+      "technologies": {
+        "FE": {
+          "libraries": ["Vue.js", "Vuex", "Vuetify", "Chart.js"]
+        }
+      },
       "url": "https://aastrox.netlify.app"
     },
     {
       "name": "miner-sapper",
       "description": "It is the collection of simple classic computer games: minesweeper, tetris, snake, crush and 2048",
-      "libraries": ["TypeScript", "Vite", "Vue.js", "Express", "Firebase"],
+      "technologies": {
+        "FE": {
+          "libraries": ["TypeScript", "Vite", "Vue.js", "Firebase"]
+        }
+      },
       "url": "https://miner-sapper.netlify.app"
     },
     {
       "name": "heroes-adviser",
       "description": "Dota2 heroes adviser application to counter pick your enemy team",
-      "libraries": ["Svelte", "Highcharts"],
+      "technologies": {
+        "FE": {
+          "libraries": ["Svelte", "Highcharts"]
+        }
+      },
       "url": "https://heroes-adviser.netlify.app"
     },
     {
       "name": "Musiy",
       "description": "The music application containing information about top artists, albums, labels, etc. built on open GraphQL API",
-      "libraries": ["TypeScript", "Vite", "React", "Apollo"],
+      "technologies": {
+        "FE": {
+          "libraries": ["TypeScript", "Vite", "React", "Apollo"]
+        }
+      },
       "url": "https://musiy.netlify.app"
     },
     {
       "name": "Geodventure",
       "description": "An interactive geography game where players explore random locations on a virtual map and guess their real-world locations.",
-      "libraries": ["TypeScript", "Vite", "React", "shadcn/ui", "Firebase", "Ably", "Google Maps"],
+      "technologies": {
+        "FE": {
+          "libraries": [
+            "TypeScript",
+            "Vite",
+            "React",
+            "shadcn/ui",
+            "Firebase",
+            "Ably",
+            "Google Maps"
+          ]
+        }
+      },
       "url": "https://geodventure.netlify.app"
     }
   ],
