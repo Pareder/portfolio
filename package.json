@@ -26,7 +26,10 @@
   "devDependencies": {
     "@vituum/vite-plugin-pug": "^1.1.0",
     "sass": "^1.86.3",
+    "sharp": "^0.34.1",
+    "svgo": "^3.3.2",
     "vite": "^6.2.6",
+    "vite-plugin-image-optimizer": "^1.1.8",
     "vituum": "^1.2.0"
   }
 }
