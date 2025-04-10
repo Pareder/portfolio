@@ -3,7 +3,7 @@ section.section.projects
     each project, index in projects
         div(class=index % 2 === 0 ? '' : 'reversed' data-aos=index % 2 === 0 ? 'fade-right' : 'fade-left').projects__block
             a(href=project.url, target='_blank', rel='nofollow noopener noreferrer').project__image.image__link
-                img(src='img/projects/' + project.name.toLowerCase() + '.png', alt=project.name, title=project.name)
+                img(src='/projects/' + project.name.toLowerCase() + '.png', alt=project.name, title=project.name)
             div.project__description
                 h5.text--monospace.text--small.text--normal.text--secondary Featured Project
                 h4
@@ -19,6 +19,6 @@ section.section.projects
                 div.project__links.mt-20
                     if !project.withoutGithub
                         a(href=social[1].url + '/' + project.name.toLowerCase(), target='_blank', rel='nofollow noopener noreferrer' aria-label='Github Link')
-                            img(src='img/social/github.svg', alt='Github', title='Github').social__link
+                            img(src='/social/github.svg', alt='Github', title='Github').social__link
                     a(href=project.url, target='_blank', rel='nofollow noopener noreferrer' aria-label='External Link')
-                        img(src='img/social/link.svg', alt='External', title='External').social__link
+                        img(src='/social/link.svg', alt='External', title='External').social__link

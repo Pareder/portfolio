@@ -5,3 +5,4 @@ node_modules
 ./js
 ./css
 site
+dist

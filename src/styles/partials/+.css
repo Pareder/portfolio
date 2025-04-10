@@ -1,0 +1,15 @@
+@import "./404.scss";
+@import "./about.scss";
+@import "./base.scss";
+@import "./contact.scss";
+@import "./experience.scss";
+@import "./footer.scss";
+@import "./globals.scss";
+@import "./header.scss";
+@import "./intro.scss";
+@import "./left_panel.scss";
+@import "./mixins.scss";
+@import "./other_projects.scss";
+@import "./projects.scss";
+@import "./right_panel.scss";
+@import "./variables.scss";

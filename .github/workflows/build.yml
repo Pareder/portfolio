@@ -4,23 +4,22 @@
 name: Build
 on:
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test_and_build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-    
-      # extract `engines.node` from package.json and save it to output
-      - name: Get Node.JS version from package.json
-        id: get-versions
-        run: echo ::set-output name=node::$(jq -r .engines.node ./package.json)
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      # extract `engines.node` from package.json and set as env variable
+      - name: Get Node.JS version from package.json
+        run: echo "NODE_VERSION=$(jq -r .engines.node ./package.json)" >> "$GITHUB_ENV"
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: ${{steps.get-versions.outputs.node}}
+          node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
       - run: npm ci
