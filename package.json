@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "My own personal site portfolio",
   "engines": {
-    "node": "18.16.0"
+    "node": "20.18.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Pareder/portfolio"
   },
   "homepage": "https://pareder.netlify.app",
-  "main": "gulpfile.esm.js",
+  "type": "module",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve --watch",
     "build": "gulp build"
@@ -26,7 +27,6 @@
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "browser-sync": "^3.0.3",
-    "esm": "^3.2.25",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
