@@ -1,3 +1,5 @@
+@use "mixins";
+
 .contact {
   max-width: 600px;
 }
@@ -19,11 +21,11 @@
 .contact__h4 {
   font-size: 32px;
 
-  @include md {
+  @include mixins.md {
     font-size: 48px;
   }
 
-  @include lg {
+  @include mixins.lg {
     font-size: 60px;
   }
 }
@@ -32,7 +34,7 @@
   margin: 40px 0;
   font-size: 14px;
 
-  @include md {
+  @include mixins.md {
     margin: 80px 0;
     font-size: 18px;
   }

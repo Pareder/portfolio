@@ -1,16 +1,18 @@
+@use "mixins";
+
 .not_found__h1 {
   font-size: 60px;
   line-height: 1;
 
-  @include md {
+  @include mixins.md {
     font-size: 80px;
   }
 
-  @include lg {
+  @include mixins.lg {
     font-size: 100px;
   }
 
-  @include xl {
+  @include mixins.xl {
     font-size: 120px;
   }
 }

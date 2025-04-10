@@ -1,3 +1,6 @@
+@use "globals";
+@use "mixins";
+
 .projects__block {
   display: flex;
   align-items: center;
@@ -29,17 +32,17 @@
 .project__image {
   display: none;
 
-  @include md {
+  @include mixins.md {
     display: block;
   }
 }
 
 .project__description {
-  @include md {
+  @include mixins.md {
     width: 75%;
   }
 
-  @include lg {
+  @include mixins.lg {
     width: 50%;
   }
 }
@@ -49,16 +52,16 @@
   z-index: 2;
   margin: 40px 0;
   padding: 20px;
-  background-color: $background-color-light;
+  background-color: globals.$background-color-light;
   border-radius: 3px;
-  box-shadow: $box-shadow-color 0px 10px 30px -15px;
+  box-shadow: globals.$box-shadow-color 0px 10px 30px -15px;
 
   & > p {
     margin-bottom: 0;
     font-size: 16px;
   }
 
-  @include md {
+  @include mixins.md {
     width: calc(100% + 50px);
     left: -50px;
   }

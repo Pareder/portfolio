@@ -1,10 +1,16 @@
+@use "sass:list";
+@use "sass:math";
+@use "globals";
+@use "mixins";
+@use "variables";
+
 @mixin render($scene) {
   @for $frame from 1 through 311 {
     .intro__animation span:nth-of-type(#{$frame}) {
-      transition-delay: random(800) + ms !important;
-      background-color: rgba($primary, calc(random(10) / 5 + .2));
-      @if length($scene) >= $frame {
-        clip-path: nth($scene, $frame);
+      transition-delay: math.random(800) + ms !important;
+      background-color: rgba(globals.$primary, calc(math.random(10) / 5 + .2));
+      @if list.length($scene) >= $frame {
+        clip-path: list.nth($scene, $frame);
       }
       @else {
         clip-path: polygon(50% 50%, 50% 50%, 50% 50%);
@@ -14,11 +20,11 @@
 }
 
 .name {
-  @include render($name);
+  @include render(variables.$name);
 }
 
 .position {
-  @include render($position);
+  @include render(variables.$position);
 }
 
 .intro__animation {
@@ -43,7 +49,7 @@
   font-weight: 400;
   font-size: 18px;
 
-  @include md {
+  @include mixins.md {
     font-size: 24px;
   }
 }
@@ -55,7 +61,7 @@
 .intro__text {
   margin: 30px 0;
 
-  @include md {
+  @include mixins.md {
     width: 60%;
     margin: 80px 0;
   }

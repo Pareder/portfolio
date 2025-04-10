@@ -1,3 +1,5 @@
+@use "mixins";
+
 .footer {
   padding: 50px 20px 20px;
 }
@@ -15,7 +17,7 @@
     }
   }
 
-  @include md {
+  @include mixins.md {
     display: none;
   }
 }
