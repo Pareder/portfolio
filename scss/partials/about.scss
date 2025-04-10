@@ -1,3 +1,6 @@
+@use "globals";
+@use "mixins";
+
 .about__info {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +8,7 @@
 }
 
 .info__text {
-  @include md {
+  @include mixins.md {
     width: 60%;
   }
 }
@@ -22,13 +25,13 @@
   margin: 0 auto 40px auto;
   order: -1;
 
-  @include md {
+  @include mixins.md {
     order: 1;
   }
 }
 
 .image--border {
-  @include md {
+  @include mixins.md {
     &::after {
       content: "";
       display: block;
@@ -38,7 +41,7 @@
       top: 0;
       z-index: -1;
       transform: translate(25px, 25px);
-      border: 2px solid $secondary;
+      border: 2px solid globals.$secondary;
       border-radius: 3px;
       transition: transform 0.3s ease;
     }

@@ -1,8 +1,11 @@
+@use "globals";
+@use "mixins";
+
 .experience__container {
   display: flex;
   flex-direction: column;
 
-  @include md {
+  @include mixins.md {
     flex-direction: row;
   }
 }
@@ -12,7 +15,7 @@
   display: flex;
   flex-direction: column;
 
-  @include md {
+  @include mixins.md {
     margin-right: 30px;
   }
 }
@@ -20,24 +23,24 @@
 .experience__btn {
   padding: 15px 20px;
   border: none;
-  border-left: 2px solid $dark-grey;
+  border-left: 2px solid globals.$dark-grey;
   outline: none;
   background: none;
   font-size: 16px;
-  color: $primary;
+  color: globals.$primary;
   cursor: pointer;
   white-space: nowrap;
   text-align: left;
   transition: all 0.3s;
 
   &.active {
-    color: $secondary;
-    border-left-color: $secondary;
+    color: globals.$secondary;
+    border-left-color: globals.$secondary;
   }
 
   &:hover {
-    color: $secondary;
-    background-color: $background-color-light;
+    color: globals.$secondary;
+    background-color: globals.$background-color-light;
   }
 }
 
@@ -82,7 +85,7 @@
     height: 1px;
     transform: scaleX(0);
     transform-origin: left;
-    background-color: $secondary;
+    background-color: globals.$secondary;
     transition: transform 0.3s ease;
   }
 
@@ -95,7 +98,7 @@
   margin-top: 40px;
   font-size: 14px;
 
-  @include md {
+  @include mixins.md {
     font-size: 16px;
   }
 }

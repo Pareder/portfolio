@@ -1,11 +1,14 @@
+@use "globals";
+@use "mixins";
+
 .header {
   position: relative;
   z-index: 11;
   padding: 30px 20px;
-  background-color: $background-color;
-  box-shadow: $box-shadow-color 0 10px 30px -15px;
+  background-color: globals.$background-color;
+  box-shadow: globals.$box-shadow-color 0 10px 30px -15px;
 
-  @include md {
+  @include mixins.md {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -59,7 +62,7 @@
     width: 32px;
     height: 3px;
     border-radius: 3px;
-    background-color: $secondary;
+    background-color: globals.$secondary;
     transition: transform 0.3s ease;
   }
 
@@ -71,7 +74,7 @@
     top: 5px;
   }
 
-  @include md {
+  @include mixins.md {
     display: none;
   }
 }
@@ -88,11 +91,11 @@
   justify-content: center;
   padding: 40px;
   transform: translateX(300px);
-  background-color: $background-color-light;
-  box-shadow: $box-shadow-color -5px 0px 20px 5px;
+  background-color: globals.$background-color-light;
+  box-shadow: globals.$box-shadow-color -5px 0px 20px 5px;
   transition: transform 0.5s ease;
 
-  @include md {
+  @include mixins.md {
     flex-direction: row;
     align-items: center;
     position: static;
@@ -110,7 +113,7 @@
   margin-bottom: 20px;
   counter-reset: item;
 
-  @include md {
+  @include mixins.md {
     flex-direction: row;
     margin-bottom: 0;
   }
@@ -122,14 +125,14 @@
 
   &::before {
     content: "0" counter(item) ".";
-    color: $secondary;
+    color: globals.$secondary;
   }
 
   a {
     padding: 10px;
   }
 
-  @include md {
+  @include mixins.md {
     margin: 0 10px;
   }
 }
