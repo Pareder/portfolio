@@ -3,7 +3,7 @@
   "title": "Anton Cherniavskyi | Front-End Developer",
   "description": "Versatile front-end software engineer focused on building beautiful interfaces and experiences",
   "url": "https://pareder.github.io",
-  "cover": "img/cover.png",
+  "cover": "/cover.png",
   "social": [
     {
       "title": "email",

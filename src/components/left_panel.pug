@@ -3,4 +3,4 @@ div.left_panel
         each link in social
             li
                 a(href=link.url, target=link.title === 'email' ? '_self' : '_blank', title=link.title)
-                    img(src='img/social/' + link.title + '.svg', alt=link.title).social__link
+                    img(src='/social/' + link.title + '.svg', alt=link.title).social__link

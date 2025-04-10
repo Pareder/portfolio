@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/pareder/portfolio/master/img/logo/logo.svg" width="100" alt="Logo"/>
+  <img src="https://raw.githubusercontent.com/pareder/portfolio/master/public/logo/logo.svg" width="100" alt="Logo"/>
 </div>
 <h1 align="center">
   Personal Website
@@ -13,25 +13,28 @@
   </a>
 </p>
 
-![demo](./img/cover.png)
+![demo](./public/cover.png)
 
 ## Used
 
-* [Gulp](https://gulpjs.com/)
-* [Pug](https://pugjs.org/)
-* [SCSS](https://sass-lang.com/documentation/syntax#scss)
+- [Gulp](https://gulpjs.com/)
+- [Pug](https://pugjs.org/)
+- [SCSS](https://sass-lang.com/documentation/syntax#scss)
 
 ## Project Setup
+
 ```
 npm install
 ```
 
 ### Starts the server
+
 ```
 npm start
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```

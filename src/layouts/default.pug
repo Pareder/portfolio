@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
-    include ../includes/head.pug
+    include ../components/head.pug
     body
         block content
         script(src='https://unpkg.com/aos@next/dist/aos.js')
-        script(src='js/main.js')
+        script(src='/src/scripts/main.js', type='module')
