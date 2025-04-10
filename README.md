@@ -5,7 +5,7 @@
   Personal Website
 </h1>
 <p align="center">
-  My own <a href="https://pareder.netlify.app" target="_blank">personal site</a> portfolio build with <a href="https://gulpjs.com" target="_blank">Gulp</a> and hosted with <a href="https://www.netlify.com" target="_blank">Netlify</a>.
+  My own <a href="https://pareder.netlify.app" target="_blank">personal site</a> portfolio build with <a href="https://vite.dev" target="_blank">Vite</a> and hosted with <a href="https://www.netlify.com" target="_blank">Netlify</a>.
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/pareder/deploys" target="_blank">
@@ -17,9 +17,10 @@
 
 ## Used
 
-- [Gulp](https://gulpjs.com/)
+- [Vite](https://vite.dev)
+- [Vituum](https://vituum.dev)
 - [Pug](https://pugjs.org/)
-- [SCSS](https://sass-lang.com/documentation/syntax#scss)
+- [SCSS](https://sass-lang.com)
 
 ## Project Setup
 
