@@ -6,3 +6,7 @@ node_modules
 ./css
 site
 dist
+
+# local env files
+.env.local
+.env.*.local
